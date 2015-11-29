@@ -1,4 +1,4 @@
-# AWS-Sign-Small
+# aws-v4-sign-small
 
 Size optimized library to perform AWS V4 request signing designed for use in the browser
 
