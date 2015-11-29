@@ -1,0 +1,5 @@
+!dist/aws-v4-sign-small.js
+!dist/aws-v4-sign-small.js.gz
+
+!dist/aws-v4-sign-small.min.js
+!dist/aws-v4-sign-small.min.js.gz

@@ -1,0 +1,35 @@
+{
+  "name": "aws-v4-sign-small",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab",
+    "pretest": "npm run lint",
+    "prepublish": "npm run bundle && npm run bundle-min",
+    "bundle-min": "browserify index.js -o dist/aws-v4-sign-small.min.js | uglifyjs && gzip -k -f dist/aws-v4-sign-small.min.js",
+    "bundle": "browserify index.js -o dist/aws-v4-sign-small.js && gzip -k -f dist/aws-v4-sign-small.js",
+    "dev": "nodemon --exec npm run bundle",
+    "lint": "standard | snazzy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "code": "^2.0.1",
+    "lab": "^7.3.0",
+    "nodemon": "^1.8.1",
+    "snazzy": "^2.0.1",
+    "standard": "^5.4.1",
+    "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {
+    "cipher-base": "^1.0.2"
+  },
+  "standard": {
+    "ignore": [
+      "lib/vendor/",
+      "dist/"
+    ]
+  }
+}
