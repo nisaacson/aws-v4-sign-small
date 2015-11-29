@@ -5,7 +5,7 @@ Size optimized library to perform AWS V4 request signing designed for use in the
 # Usage
 
 ```
-npm install --save- aws-v4-sign-small
+npm install --save aws-v4-sign-small
 ```
 
 # Usage
