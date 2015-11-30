@@ -4,7 +4,7 @@ Size optimized library to perform AWS V4 request signing designed for use in the
 
 [![NPM](https://nodei.co/npm/aws-v4-sign-small.png)](https://nodei.co/npm/aws-v4-sign-small/)
 
-# Usage
+# Installation
 
 ```
 npm install --save aws-v4-sign-small
