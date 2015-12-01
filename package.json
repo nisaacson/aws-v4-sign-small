@@ -7,9 +7,9 @@
     "test": "lab",
     "pretest": "npm run lint",
     "prepublish": "npm run bundle && npm run bundle-min",
-    "bundle-min": "browserify index.js -o dist/aws-v4-sign-small.min.js | uglifyjs && gzip -k -f dist/aws-v4-sign-small.min.js",
-    "bundle": "browserify index.js -o dist/aws-v4-sign-small.js && gzip -k -f dist/aws-v4-sign-small.js",
-    "dev": "nodemon --exec npm run bundle",
+    "bundle-min": "rm -f dist/aws-v4-sign-small.min.js && browserify index.js | uglifyjs --compress --mangle - > dist/aws-v4-sign-small.min.js && gzip -k -f dist/aws-v4-sign-small.min.js",
+    "bundle": "rm -f dist/aws-v4-sign-small.js && browserify index.js -o dist/aws-v4-sign-small.js && gzip -k -f dist/aws-v4-sign-small.js",
+    "dev": "nodemon --exec npm run bundle && npm run bundle-min",
     "lint": "standard | snazzy"
   },
   "author": "",
@@ -24,7 +24,8 @@
     "uglifyjs": "^2.4.10"
   },
   "dependencies": {
-    "cipher-base": "^1.0.2"
+    "crypto-js": "^3.1.5",
+    "strict-uri-encode": "^1.0.2"
   },
   "standard": {
     "ignore": [
