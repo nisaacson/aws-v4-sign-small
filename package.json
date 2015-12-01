@@ -1,6 +1,6 @@
 {
   "name": "aws-v4-sign-small",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
