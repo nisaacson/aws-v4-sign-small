@@ -1,7 +1,7 @@
 {
   "name": "aws-v4-sign-small",
   "version": "1.0.5",
-  "description": "",
+  "description": "Size optimized library to perform AWS V4 request signing designed for use in the browser",
   "main": "index.js",
   "scripts": {
     "test": "lab",
@@ -12,7 +12,7 @@
     "dev": "nodemon --exec npm run bundle && npm run bundle-min",
     "lint": "standard | snazzy"
   },
-  "author": "",
+  "author": "Noah Isaacson <noah+npmjs@nisaacson.com>",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^12.0.1",
@@ -32,5 +32,16 @@
       "lib/vendor/",
       "dist/"
     ]
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nisaacson/aws-v4-sign-small.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nisaacson/aws-v4-sign-small/issues"
+  },
+  "homepage": "https://github.com/nisaacson/aws-v4-sign-small#readme"
 }
