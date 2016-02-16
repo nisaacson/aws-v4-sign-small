@@ -1,6 +1,6 @@
 # aws-v4-sign-small
 
-Size optimized library to perform AWS V4 request signing designed for use in the browser
+Size optimized library to perform AWS V4 request signing designed for use in the browser. Forked from [aws4](https://github.com/mhart/aws4)
 
 [![NPM](https://nodei.co/npm/aws-v4-sign-small.png)](https://nodei.co/npm/aws-v4-sign-small/)
 
@@ -50,3 +50,7 @@ console.log('signed options: ', opts)
 ```sh
 AWS_ACCESS_KEY=access_key_here AWS_SECRET_ACCESS_KEY=secret_here npm run test
 ```
+
+# Attributions
+
+This project is uses source code from [aws4](https://github.com/mhart/aws4) by [Michael Hart](https://github.com/mhart). Some dependencies are changed to make the package smaller when using  in the browser. Some of the utility functions in aws4 have been dropped as well to keep the size down
